@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Foxtrot - Katheryn Grant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+  <div class="links"><a href="https://github.com/katherynisabell/Juliette">See the Code</a>
+  </div>
+  <div class="links"><a href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkatherynisabell.github.io%2FJuliette%2F">Check the Code</a>
+  </div>
+  <nav>
+    <!--Creates tab 1-->
+    <button class="tablink" onclick="openPage('Poor', this, '#46166B')" id="defaultOpen">Poor UX</button>
+    <!--Creates tab 2-->
+    <button class="tablink" onclick="openPage('Improved', this, '#46166B')">Improved UX</button>
+  </nav>
+
+  <!-- tab 1 content-->
+  <div id="Poor" class="tabcontent row">
+    <div class="card">
+      <div class="card-body">
+        <div class="card-header bg-transparent border-success"> <h5>Below is an example of a poorly designed user interface.</h5> 
+        Several times a year I spend time mapping out my courses using UNA's Degree Works audit system. The Degree Works page is used to show students 
+        what classes are required in their degree program to graduate. I always find myself spending too much time scrolling through the 
+        page to see what courses I completed, what courses I are in progress, and courses I still need to complete. I have blocked out my personal 
+        information for this example.</div>
+        <br>
+        <div class="card-title"><h5>UNA Degree Works </h5>
+          Criteria: Completed, Completed with Classes in Progress, Prerequisite, Repeated Class, Not Complete, Nearly Complete - See Advisor, 
+        </div>
+        <p class="card-text">
+          <img src="img/UNA1.png" alt="Degree Works Page 1">
+          <br>
+          <img src="img/UNA2.png" alt="Degree Works Page 2">
+          <br>
+          <img src="img/UNA3.png" alt="Degree Works Page 3">
+          <br>
+          <img src="img/UNA44.png" alt="Degree Works Page 4">
+          <br>
+          <img src="img/UNA5.png" alt="Degree Works Page 5">
+          <br>
+          <img src="img/UNA6.png" alt="Degree Works Page 6">
+        </p>
+        Lots of scrolling...
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 2 content-->
+  <div id="Improved" class="tabcontent row"> 
+    <div class="card">
+      <div class="card-body">
+        <div class="card-header bg-transparent border-success"> <h5>Lets make this better!</h5> 
+          A major improvement to this system would be drop down menus to search the courses by the criteria listed in the legend.
+        </div>
+          <br>
+        <div> 
+          <center>
+          <h1 style="color:white;">UNA Degree Works 
+          </h1>
+            <p> Search by Criteria: Completed, Completed with Classes in Progress, Prerequisite, Repeated Class, Not Complete, Nearly Complete - See Advisor </p>
+                <div>
+                  <select>
+                      <option>Select</option>
+                      <option value="Completed">Completed</option>
+                      <option value="Inprogress">Courses In Progress</option>
+                      <option value="Prerequisite">Courses with Prerequisites</option>
+                      <option value="Repeated">Repeated Courses</option>
+                      <option value="Incomplete" >Not Complete</option>
+                      <option value="Nearly" >Nearly Complete - See Advisor</option>
+                  </select>
+                </div>
+              <div class="Completed GFG" 
+                  style="padding: 30px; 
+                          margin-top: 30px;
+                          width :60%; 
+                          background:#46166B">
+                You have completed the following courses: CIS 125, CIS 344, ITE 369
+          
+              </div>
+              <div class="Inprogress GFG" 
+                  style="padding: 30px;
+                          margin-top: 30px; 
+                          width :60%;
+                          background:#46166B">
+                Your courses in progress are: MG 395, ITE 359, CIS 225
+              </div>
+              <div class="Prerequisite GFG"
+                  style="padding: 30px;
+                          margin-top: 30px; 
+                          width :60%;
+                          background:#46166B">
+                The Following Courses Have Prerequisites: ITE 449
+            </div>
+              <div class="Repeated GFG"
+                  style="padding: 30px;
+                          margin-top: 30px; 
+                          width :60%;
+                          background:#46166B">
+                Your Repeated Courses are: N/A
+            </div>
+              <div class="Incomplete GFG"
+                  style="padding: 30px;
+                  margin-top: 30px; 
+                  width :60%;
+                  background:#46166B">
+                You Still Need the Following Courses: CIS 489
+              </div>
+              <div class="Nearly GFG"
+                  style="padding: 30px;
+                  margin-top: 30px; 
+                  width :60%;
+                  background:#46166B">
+                Your Nearly Completed Courses are: CIS 366, CIS 376, ITE 349
+                <br> Please see your Advisor
+            </div>
+               <div id="console-box">
+                  </div>
+        </center>          
+        </div>
+      </div>
+    </div>      
+  </div>
+</body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+<script  src="script.js"></script>
+</html>

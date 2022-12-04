@@ -1,0 +1,87 @@
+/* Style body */
+body, html {
+  height: 75%;
+}
+
+/* Style tabs and content */
+.tablink {
+  background-color: #46166B;
+  color: white;
+  float: left;
+  outline-color: #5F6062;
+  outline-width:inherit;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 25px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #DB9F11;
+}
+
+.tabcontent {
+  text-align: center;
+  color: white;
+  display: none;
+  padding: 100px 10px;
+  height: 500%;
+}
+
+#Poor {background-color: #46166B;
+      background-size: contain;
+}
+#Improved {background-color: #46166B;
+      background-size: contain;
+}
+
+.textover img { width: 100%; }
+.textover { max-width: 600px; }
+
+.textover { position: relative; } 
+.textover figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Style bootstrap button */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #DB9F11;!important;
+}
+
+/* Style Cards */
+.card{
+color: white;
+position: absolute;
+text-align: center;
+background-color: #DB9F11;
+}
+
+img {
+  width:  700px;
+  height: auto;
+  object-fit: contain;
+}
+
+#console-box{
+  height:400px;
+  width:400px;
+  background-color:#000;
+  color: #55ff55;
+  font-family: monospace;
+  padding:6px; 
+  position:absolute;
+  top:110%;
+  left:42%;
+  margin: top -100px; /* this is half the height of your div*/  
+  margin-left:-100px; /*this is half of width of your div*/
+}
+
+
+.links a {font-family:Georgia,serif; font-size:large}
+.links a:link {color:#DB9F11;}
+.links a:visited {color:#DB9F11;}
+.links a:hover {text-decoration:none;font-weight:bold;}
+.links a:active {color:red;text-decoration: none}
+.links {text-align: center;}
